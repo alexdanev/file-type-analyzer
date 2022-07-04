@@ -108,9 +108,8 @@ public class KmpAlgorithm implements Algorithm {
             return -1;
         }
 
-        for (int i = 0; i < text.length; i++) {
+        for (int i = 1; i < text.length; i++) {
             // check each byte
-
             if (text[i] != search[i]) {
                 // if we find non-matched position we return previous index
                 return i - 1;
